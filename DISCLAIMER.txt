@@ -1,0 +1,31 @@
+AUTHOR'S DECLARATION: I, RED FOREST, (UID: Repeated 100), a Foxie Games Player, claim the authorship of this mod, and alone take responsibility of development of contents of this app and package and corresponding mods in series.
+I do NOT post anything intended to be Grief mod.
+
+DISCLAIMER: The purpose of the mods is Educational Research only.
+1. I, RED FOREST, state that the responsibility of mod abuse from any user, does not default to me.
+2. The sole purpose of this mod was experiments, all educational. As long as boundaries are respected, mods will be published.
+3. If detected being abused, all mods are liable to be seized from public access. The abuser may also be seized of their mod.
+4. I keep anti-mods for every mod I make. At the same time, we can build individual specific amendment patches, provided the grief was caused by abuse of my mods.
+
+INTENT: The intent of creation of mods is motivated by:
+1. Educational plans and projects only.
+2. Abandonment of updates.
+3. Instances of historical mods.
+4. Cooperative modding.
+5. Approval from other players to make levelling, etc. convenient.
+6. Possibilities of anti-mods in case of abuse.
+7. Client-authoritative game calls.
+8. Role of mods in continuing an inspired gaming environment.
+9. Minimal security threat from modding alone (e.g., players routinely restart progress).
+10. Impossibility of privacy breaks from this mod, as far as we know. 
+
+CAUTION: Do not abuse mod. If found abusing, your mods may be seized. Abusing can include:
+1. Force modifying target's parameters despite disapproval.
+2. Helping any / tampering the parameters of any Newbie.
+3. EXPOSING PRIVATE MODS TO THE PUBLIC. This is clearly a violation of the gamer's rulebook, triggering seize. Use the private mods only against those who also have access to the same, else that can violate FoxieGame's Terms.
+
+ACKNOWLEDGEMENT: I acknowledge the use of several reverse engineering tools, virtual machines, several utilities, peer help and most importantly, app's version 1.12 (32-bit) for the mod.
+
+PURPOSE: Educational Research only.
+
+COPYRIGHT STATEMENT: Please read license.
