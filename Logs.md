@@ -37,6 +37,7 @@
     </details>
     <hr>
   </details>
+  <hr>
   <details>
     <summary><b>Coming Soon</b></summary>
     <details>
@@ -94,6 +95,7 @@
       <li><b>Password:</b> Usual format </li>
       </ol>
     </details>
+    <hr>
   </details>
 
 </details>
