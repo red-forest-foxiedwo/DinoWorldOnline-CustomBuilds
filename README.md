@@ -19,3 +19,6 @@ This repository documents custom patches and tools developed for testing, experi
 ## Status: Work in progress ...
 #### Estimated Upcoming Patch Details:
 Follow `Logs.md`
+
+## Licence
+`LICEN
