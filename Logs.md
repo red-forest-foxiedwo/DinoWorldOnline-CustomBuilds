@@ -32,7 +32,7 @@
       <summary><b>Private Redacted: No licence (Community Preservation)</b></summary>
       <a href="https://drive.google.com/file/d/1a2vvXn1IsvAUrBEH8GiQdCK6ZXZ39c95/view?usp=drivesdk">God-Mod-Redacted</a>a>
     </details>
-    </details>
+  </details>
   </details>
   <details>
     <summary><b>Coming Soon</b></summary>
@@ -65,6 +65,7 @@
       <li><b>Password:</b> Usual format </li>
       </ol>
     </details>
+  </details>
     <details>
       <summary><b>Mod <i>XP Bomb</i></b></summary>
       <ol>
