@@ -16,6 +16,7 @@
     <li>Password format: Date_of_Publish + Secret_Code (e.g., DOP = 1st January 2027, Key = A to J, then Password = 01012027ABCDEFGHIJ) (Ask me for Secret_Code)</li>
   </ol>
 </details>
+<hr>
 <details>
   <summary><b>CHRONICLES - 2026</b></summary>
   <details>
@@ -24,14 +25,17 @@
       <summary><b>Public: MIT licence</b></summary>
       None
     </details>
+    <hr>
     <details>
       <summary><b>Private: All Rights Reserved (Proprietary licence)</b></summary>
       None
     </details>
+    <hr>
     <details>
       <summary><b>Private Redacted: No licence (Community Preservation)</b></summary>
       <a href="https://drive.google.com/file/d/1a2vvXn1IsvAUrBEH8GiQdCK6ZXZ39c95/view?usp=drivesdk">God-Mod-Redacted</a>a>
     </details>
+    <hr>
   </details>
   <details>
     <summary><b>Coming Soon</b></summary>
@@ -47,9 +51,9 @@
       <li><b>Password:</b> Usual format </li>
       </ol>
     </details>
-
+    <hr>
   </details>
-
+  <hr>
   <details>
     <summary><b>Speculated</b></summary>
     <details>
@@ -64,7 +68,7 @@
       <li><b>Password:</b> Usual format </li>
       </ol>
     </details>
-  </details>
+    <hr>
     <details>
       <summary><b>Mod <i>XP Bomb</i></b></summary>
       <ol>
@@ -77,6 +81,7 @@
       <li><b>Password:</b> Usual format </li>
       </ol>
     </details>
+    <hr>
     <details>
       <summary><b>Mod <i>XP Annihilator</i></b></summary>
       <ol>
