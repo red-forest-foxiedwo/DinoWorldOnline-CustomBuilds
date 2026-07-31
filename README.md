@@ -10,8 +10,8 @@ Only patched APKs
 
 ## Contents
 - `DISCLAIMER` — Disclaimer, Acknowledgement and Anti-Abuse Guidelines
-- `LICENSE' — MIT License
-— 'Logs.md'— Pathway to Mods
+- `LICENSE` — MIT License
+— 'Logs.md` — Pathway to Mods
 
 ## Status: Work in progress ...
 #### Estimated Upcoming Patch Details:
