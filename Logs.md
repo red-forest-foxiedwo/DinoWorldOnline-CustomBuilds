@@ -20,7 +20,19 @@
   <summary><b>CHRONICLES - 2026</b></summary>
   <details>
     <summary><b>Published</b></summary>
-    None
+    <details>
+      <summary><b>Public: MIT licence</b></summary>
+      None
+    </details>
+    <details>
+      <summary><b>Private: All Rights Reserved (Proprietary licence)</b></summary>
+      None
+    </details>
+    <details>
+      <summary><b>Private Redacted: No licence (Community Preservation)</b></summary>
+      <a href="https://drive.google.com/file/d/1a2vvXn1IsvAUrBEH8GiQdCK6ZXZ39c95/view?usp=drivesdk">God-Mod-Redacted</a>a>
+    </details>
+    </details>
   </details>
   <details>
     <summary><b>Coming Soon</b></summary>
