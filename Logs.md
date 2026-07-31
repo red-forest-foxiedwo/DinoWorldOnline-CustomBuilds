@@ -2,7 +2,16 @@
   <summary>General Information</summary>
   <ol>
     <li>Prerequisites: A Google account</li>
-    <li>Installing procedure: Find correct mod link below ▶️ Open link using Google Drive ▶️ Read page thoroughly ▶️ Install .zip ▶️ Open using password ▶️ .apk inside the extracted folder ▶️ Install .apk</li>
+    <li>Installing procedure:
+      <ol>
+      <li>Find correct mod link below
+      <li>Open link using Google Drive</li>
+      <li>Read page thoroughly</li>
+      <li>Install .zip</li>
+      <li>Open using password</li>
+      <li>.apk inside the extracted folder ▶️ Install .apk</li>
+      <ol>
+    </li>
     <li>Password format: Date_of_Publish + Secret_Code (e.g., DOP = 1st January 2027, Key = A to J, then Password = 01012027ABCDEFGHIJ) (Ask me for Secret_Code)</li>
   </ol>
 </details>
