@@ -1,9 +1,9 @@
 <details>
   <summary>General Information</summary>
   <ol>
-    <li>Package format: .zip containing .apk</li>
-    <li>Password format: Date_of_Publish + Key (e.g., DOP = 1st January 2027, Key = A to J, then Password = 01012027ABCDEFGHIJ)</li>
-    <li>Key source: Ask me</li>
+    <li>Prerequisites: A Google account</li>
+    <li>Installing procedure: Find correct mod link below ▶️ Open link using Google Drive ▶️ Read page thoroughly ▶️ Install .zip ▶️ Open using password ▶️ .apk inside the extracted folder ▶️ Install .apk</li>
+    <li>Password format: Date_of_Publish + Secret_Code (e.g., DOP = 1st January 2027, Key = A to J, then Password = 01012027ABCDEFGHIJ) (Ask me for Secret_Code)</li>
   </ol>
 </details>
 <details>
