@@ -1,8 +1,9 @@
 # Dino World Online - Hunters 3d: Mod APKs
 Repo for posting mod APKs related to the Foxie game Dino World Online - Hunters 3d, for Android Users.
 
-# Disclaimer, Anti-Abuse, Warnings
-Refer to `DISCLAIMER`
+# Disclaimer & Licence
+- Refer to `DISCLAIMER`
+- `LICENCE` only licenses edits made to methods in Assembly-CSharp.dll if working on my edots directly
 
 ## Currently posting
 Only patched APKs
@@ -19,6 +20,3 @@ This repository documents custom patches and tools developed for testing, experi
 ## Status: Work in progress ...
 #### Estimated Upcoming Patch Details:
 Follow `Logs.md`
-
-## Licence
-`LICENCE` only applies to the edits made to methods in Assembly-CSharp.dll (mono)
