@@ -3,7 +3,7 @@ Repo for posting mod APKs related to the Foxie game Dino World Online - Hunters 
 
 # Disclaimer & Licence
 - Refer to `DISCLAIMER`
-- `LICENCE` only licenses my own edits made to methods in Assembly-CSharp.dll if modifying on the same edits directly
+- `LICENSE` only licenses my own edits made to methods in Assembly-CSharp.dll if modifying on the same edits directly
 
 ## Currently posting
 Only patched APKs
