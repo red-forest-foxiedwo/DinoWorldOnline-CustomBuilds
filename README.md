@@ -9,10 +9,9 @@ Repo for posting mod APKs related to the Foxie game Dino World Online - Hunters 
 Only patched APKs
 
 ## Contents
-- `patches/` — individual patches
-- `tools/` — utilities and scripts
-- `docs/` — research and notes
 - `DISCLAIMER` — Disclaimer, Acknowledgement and Anti-Abuse Guidelines
+- `LICENSE' — MIT License
+— 'Logs.md'— Pathway to Mods
 
 ## Status: Work in progress ...
 #### Estimated Upcoming Patch Details:
