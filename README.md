@@ -21,4 +21,4 @@ This repository documents custom patches and tools developed for testing, experi
 Follow `Logs.md`
 
 ## Licence
-`LICEN
+`LICENCE` only applies to the edits made to methods in Assembly-CSharp.dll (mono)
