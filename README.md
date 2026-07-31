@@ -18,4 +18,4 @@ This repository documents custom patches and tools developed for testing, experi
 
 ## Status: Work in progress ...
 #### Estimated Upcoming Patch Details:
-Follow `Patch.chronicle`
+Follow `Logs.md`
