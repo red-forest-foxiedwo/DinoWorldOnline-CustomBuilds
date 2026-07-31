@@ -10,7 +10,7 @@
       <li>Install .zip</li>
       <li>Open using password</li>
       <li>.apk inside the extracted folder ▶️ Install .apk</li>
-      <ol>
+      </ol>
     </li>
     <li>Password format: Date_of_Publish + Secret_Code (e.g., DOP = 1st January 2027, Key = A to J, then Password = 01012027ABCDEFGHIJ) (Ask me for Secret_Code)</li>
   </ol>
