@@ -2,7 +2,7 @@
 Repo for posting mod APKs related to the Foxie game Dino World Online - Hunters 3d, for Android Users.
 
 # Disclaimer, Anti-Abuse, Warnings
-Refer to` DISCLAIMER`
+Refer to `DISCLAIMER.md`
 
 ## Currently posting
 Only patched APKs
@@ -14,7 +14,7 @@ This repository documents custom patches and tools developed for testing, experi
 - `patches/` — individual patches
 - `tools/` — utilities and scripts
 - `docs/` — research and notes
-- `DISCLAIMER/` — Disclaimer, Acknowledgement and Anti-Abuse Guidelines
+- `DISCLAIMER.md` — Disclaimer, Acknowledgement and Anti-Abuse Guidelines
 
 ## Status: Work in progress ...
 #### Estimated Upcoming Patch Details:
