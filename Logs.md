@@ -33,7 +33,6 @@
       <a href="https://drive.google.com/file/d/1a2vvXn1IsvAUrBEH8GiQdCK6ZXZ39c95/view?usp=drivesdk">God-Mod-Redacted</a>a>
     </details>
   </details>
-  </details>
   <details>
     <summary><b>Coming Soon</b></summary>
     <details>
