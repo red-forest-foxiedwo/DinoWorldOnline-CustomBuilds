@@ -7,8 +7,8 @@
         <li>Find correct mod link below
         <li>Open link using Google Drive</li>
         <li>Read page thoroughly</li>
-        <li>Install .zip</li>
-        <li>Open using password</li>
+        <li>Install .zip if it is not a public file</li>
+        <li>Open using password if it is designated not 100% public</li>
         <li>.apk inside the extracted folder</li>
         <li>Install .apk on personal Android (if signed), or in VM (if unsigned)</li>
       </ol>
@@ -23,7 +23,17 @@
     <summary><b>Published</b></summary>
     <details>
       <summary><b>Public: MIT licence</b></summary>
-      None
+      <details>
+      <summary><b>Mod <b><i>No Level Capping</i></b></i></b></b></summary>
+        <li><b>Patch:</b> No level 0 issues (not 100% foolproof)</li>
+        <li><b>Date of Publishing:</b> Friday 09:35 pm (GMT)</li>
+        <li><b>Type:</b> 100% Public </li>
+        <li><b>Purpose:</b> Anti-Abuse from modders who make you level 0</li>
+        <li><b>Build-Code:</b> 1 </li>
+        <li><b>Patch-ID:</b> rfmnolvlcap</li>
+        <li><b>Password:</b> No password (also no .zip format)</li>
+    </details>
+      <hr>
     </details>
     <hr>
     <details>
@@ -58,7 +68,13 @@
   <details>
     <summary><b>Speculated</b></summary>
     <details>
-      <summary><b>Mod <i>XP Architect</i></b></summary>
+      <summary><b>Mod <i>XP Architect</i></b></summary><li><b>Patch:</b> Hand out negative 2 million XP when hunted </li>
+      <li><b>Estimated Date:</b> 20th September </li>
+      <li><b>Type:</b> Public </li>
+      <li><b>Purpose:</b> Utility, Anti-Mod (to XP Builder)</li>
+      <li><b>Build-Code:</b> 1 </li>
+      <li><b>Patch-ID:</b> rfm.fgdwo.hoxp.-2m </li>
+      <li><b>Password:</b> Usual format </li>
       <ol>
       <li><b>Patch:</b> Hand out positive 2 million XP when hunted </li>
       <li><b>Speculated Date:</b> 22nd September </li>
