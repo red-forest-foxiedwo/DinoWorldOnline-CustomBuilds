@@ -1,4 +1,4 @@
-# Dino-World-Online---Hunters-3d-Custom-Builds
+# Dino World Online - Hunters 3d: Mod APKs
 Repo for posting mod APKs related to the Foxie game Dino World Online - Hunters 3d, for Android Users.
 
 # Disclaimer, Anti-Abuse, Warnings
