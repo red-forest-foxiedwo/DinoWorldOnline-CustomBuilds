@@ -68,7 +68,7 @@
     <details>
       <summary><b>Mod <i>XP Annihilator</i></b></summary>
       <ol>
-      <li><b>Patch:</b> Hand out negative 2 million XP when hunted </li>
+      <li><b>Patch:</b> Hand out negative 2 billion XP when hunted </li>
       <li><b>Estimated Date:</b> 25th September </li>
       <li><b>Type:</b> Public </li>
       <li><b>Purpose:</b> Anti-Abuse: Anti-Mod (to XP Bomb) </li>
