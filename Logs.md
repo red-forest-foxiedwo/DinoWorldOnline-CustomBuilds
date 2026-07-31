@@ -33,7 +33,7 @@
     <hr>
     <details>
       <summary><b>Private Redacted: No licence (Community Preservation)</b></summary>
-      <a href="https://drive.google.com/file/d/1a2vvXn1IsvAUrBEH8GiQdCK6ZXZ39c95/view?usp=drivesdk">God-Mod-Redacted</a>a>
+      <a href="https://drive.google.com/file/d/1a2vvXn1IsvAUrBEH8GiQdCK6ZXZ39c95/view?usp=drivesdk">God-Mod-Redacted</a>
     </details>
     <hr>
   </details>
