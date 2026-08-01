@@ -25,6 +25,7 @@
       <summary><b>Public: MIT licence</b></summary>
       <details>
       <summary><b>Mod <b><i>No Level Capping</i></b></i></b></b></summary>
+        Please download BUILD 2 for better utility.
         <li><b>Patch:</b> No level 0 issues (not 100% foolproof)</li>
         <li><b>Date of Publishing:</b> Friday 09:35 pm (GMT)</li>
         <li><b>Type:</b> 100% Public </li>
@@ -33,7 +34,18 @@
         <li><b>Patch-ID:</b> rfmnolvlcap</li>
         <li><b>Password:</b> No password (also no .zip format)</li>
         <li><b>DOWNLOAD:</b> <a href="https://drive.google.com/file/d/12vcYz-8Hg6c0_8q9rV34zSA5GfS_uVAx/view?usp=drivesdk">Click here</a></li>
-    </details>
+      </details>
+      <details>
+      <summary><b>Mod <b><i>No Level Capping— enhanced</i></b></i></b></b></summary>
+        <li><b>Patch:</b> No level 0 issues (100% foolproof)</li>
+        <li><b>Date of Publishing:</b> Friday 09:35 pm (GMT)</li>
+        <li><b>Type:</b> 100% Public </li>
+        <li><b>Purpose:</b> Anti-Abuse from modders who make you level 0</li>
+        <li><b>Build-Code:</b> 2 </li>
+        <li><b>Patch-ID:</b> rfmnolvl0 (pckgname unchanged)</li>
+        <li><b>Password:</b> No password (also no .zip format)</li>
+        <li><b>DOWNLOAD:</b> <a href="https://drive.google.com/file/d/15kbTF_GoKYsGKxeukqrQgkHggPSQOQxg/view?usp=drivesdk">Click here</a></li>
+      </details>
       <hr>
     </details>
     <hr>
