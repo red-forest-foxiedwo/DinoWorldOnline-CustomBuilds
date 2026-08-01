@@ -32,6 +32,7 @@
         <li><b>Build-Code:</b> 1 </li>
         <li><b>Patch-ID:</b> rfmnolvlcap</li>
         <li><b>Password:</b> No password (also no .zip format)</li>
+        <li><b>DOWNLOAD:</b> <a href="https://drive.google.com/file/d/12vcYz-8Hg6c0_8q9rV34zSA5GfS_uVAx/view?usp=drivesdk">Click here</a></li>
     </details>
       <hr>
     </details>
