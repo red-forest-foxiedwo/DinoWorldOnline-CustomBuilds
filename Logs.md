@@ -40,7 +40,7 @@
         <li><b>Patch:</b> No level 0 issues (100% foolproof)</li>
         <li><b>Date of Publishing:</b> Friday 09:35 pm (GMT)</li>
         <li><b>Type:</b> 100% Public </li>
-        <li><b>Purpose:</b> Anti-Abuse from modders who make you level 0</li>
+        <li><b>Purpose:</b> Anti-Abuse from modders who make you level 0. This mod is henceforth inherent in all other mods, unless mentioned.</li>
         <li><b>Build-Code:</b> 2 </li>
         <li><b>Patch-ID:</b> rfmnolvl0 (pckgname unchanged)</li>
         <li><b>Password:</b> No password (also no .zip format)</li>
