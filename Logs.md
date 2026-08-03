@@ -43,7 +43,7 @@
         <li><b>Build-Code:</b> 2 </li>
         <li><b>Patch-ID:</b> rfmnolvl0 (pckgname unchanged)</li>
         <li><b>Password:</b> No password (also no .zip format)</li>
-        <li><b>DOWNLOAD:</b> <a href="https://drive.google.com/file/d/15kbTF_GoKYsGKxeukqrQgkHggPSQOQxg/view?usp=drivesdk">Click here</a></li>
+        <li><b>DOWNLOAD:</b> <a href="">pls wait</a></li>
       </details>
       <hr>
     </details>
