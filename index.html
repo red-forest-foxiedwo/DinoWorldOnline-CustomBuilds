@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Dino World Online — Custom Builds</title>
 
-    <meta name="description"
-          content="Dino World Online - Hunters 3D custom builds, mod archive and build information.">
+    <meta
+        name="description"
+        content="Custom builds and modifications for Dino World Online — Hunters 3D."
+    >
 
-    <meta name="theme-color" content="#0b0f14">
+    <meta name="theme-color" content="#080b10">
 
     <style>
         :root {
@@ -17,12 +20,17 @@
             --surface: #111720;
             --surface-2: #171f2a;
             --border: #273241;
+
             --text: #f2f5f7;
             --muted: #9da8b5;
-            --accent: #7ee787;
-            --accent-dark: #238636;
-            --warning: #f2cc60;
-            --danger: #ff7b72;
+
+            --gold: #f2cc60;
+
+            --green: #7ee787;
+            --green-dark: #238636;
+
+            --blue: #58a6ff;
+            --blue-dark: #1f6feb;
         }
 
         * {
@@ -46,7 +54,11 @@
                 sans-serif;
 
             background:
-                radial-gradient(circle at top, #172331 0%, var(--bg) 45%);
+                radial-gradient(
+                    circle at top,
+                    #172331 0%,
+                    var(--bg) 48%
+                );
 
             color: var(--text);
             line-height: 1.6;
@@ -57,12 +69,19 @@
             text-decoration: none;
         }
 
+        code {
+            font-family: monospace;
+        }
+
         .container {
             width: min(1100px, 92%);
             margin: auto;
         }
 
-        /* NAVBAR */
+
+        /* =========================
+           NAVIGATION
+           ========================= */
 
         nav {
             position: sticky;
@@ -76,25 +95,34 @@
         }
 
         .nav-inner {
-            height: 64px;
+            min-height: 60px;
 
             display: flex;
             align-items: center;
             justify-content: space-between;
+
+            gap: 25px;
         }
 
         .brand {
             font-weight: 800;
-            letter-spacing: 0.4px;
+            letter-spacing: 0.3px;
+            white-space: nowrap;
         }
 
-        .brand span {
-            color: var(--accent);
+        .brand-foxie {
+            color: var(--gold);
+        }
+
+        .brand-separator {
+            color: var(--muted);
+            margin: 0 5px;
         }
 
         .nav-links {
             display: flex;
             gap: 22px;
+
             color: var(--muted);
             font-size: 14px;
         }
@@ -103,121 +131,134 @@
             color: var(--text);
         }
 
-        /* HERO */
+
+        /* =========================
+           HERO
+           ========================= */
 
         .hero {
-            text-align: center;
-            padding: 95px 0 80px;
+            padding: 90px 0 65px;
         }
 
-        .badge {
-            display: inline-block;
+        .hero-content {
+            display: flex;
+            align-items: center;
+            gap: 28px;
 
-            padding: 6px 12px;
-            margin-bottom: 18px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .game-icon {
+            width: 108px;
+            height: 108px;
+
+            flex-shrink: 0;
+
+            border-radius: 22px;
+
+            object-fit: cover;
 
             border: 1px solid var(--border);
-            border-radius: 999px;
 
-            color: var(--accent);
-            background: rgba(126, 231, 135, 0.06);
+            box-shadow:
+                0 12px 35px rgba(0, 0, 0, 0.35);
+        }
 
-            font-size: 13px;
+        .hero-text {
+            text-align: left;
         }
 
         h1 {
-            font-size: clamp(38px, 7vw, 72px);
+            font-size: clamp(38px, 6vw, 65px);
             line-height: 1.05;
             letter-spacing: -2px;
         }
 
-        .hero h1 span {
-            color: var(--accent);
+        h1 span {
+            color: var(--green);
         }
 
         .hero p {
-            max-width: 700px;
-            margin: 22px auto 0;
+            max-width: 720px;
+
+            margin-top: 18px;
 
             color: var(--muted);
-            font-size: 18px;
+            font-size: 17px;
         }
 
         .hero-buttons {
             display: flex;
-            justify-content: center;
             flex-wrap: wrap;
             gap: 12px;
 
-            margin-top: 32px;
+            margin-top: 26px;
         }
+
+
+        /* =========================
+           BUTTONS
+           ========================= */
 
         .button {
             display: inline-flex;
             align-items: center;
             justify-content: center;
 
-            padding: 11px 18px;
+            padding: 10px 17px;
 
             border-radius: 8px;
+
             border: 1px solid var(--border);
 
             background: var(--surface-2);
 
-            font-weight: 600;
             font-size: 14px;
+            font-weight: 650;
 
-            transition: 0.2s;
+            transition:
+                transform 0.18s,
+                border-color 0.18s,
+                background 0.18s;
         }
 
         .button:hover {
             transform: translateY(-2px);
-            border-color: #465568;
+            border-color: #526275;
         }
 
-        .button.primary {
-            background: var(--accent-dark);
-            border-color: var(--accent-dark);
+        .button.green {
+            background: var(--green-dark);
+            border-color: var(--green-dark);
             color: white;
         }
 
-        /* STATS */
-
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 14px;
-
-            margin-bottom: 70px;
+        .button.green:hover {
+            background: #2ea043;
         }
 
-        .stat {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-
-            padding: 22px;
-            text-align: center;
+        .button.blue {
+            background: var(--blue-dark);
+            border-color: var(--blue-dark);
+            color: white;
         }
 
-        .stat strong {
-            display: block;
-            font-size: 28px;
+        .button.blue:hover {
+            background: #388bfd;
         }
 
-        .stat span {
-            color: var(--muted);
-            font-size: 13px;
-        }
 
-        /* SECTIONS */
+        /* =========================
+           SECTIONS
+           ========================= */
 
         section {
             padding: 35px 0;
         }
 
         .section-title {
-            margin-bottom: 24px;
+            margin-bottom: 22px;
         }
 
         .section-title h2 {
@@ -229,7 +270,99 @@
             margin-top: 5px;
         }
 
-        /* MOD CARDS */
+
+        /* =========================
+           GENERAL INFORMATION
+           ========================= */
+
+        .info-box {
+            background: var(--surface);
+
+            border: 1px solid var(--border);
+            border-radius: 14px;
+
+            padding: 25px;
+        }
+
+        .info-box h3 {
+            margin-bottom: 14px;
+            font-size: 18px;
+        }
+
+        .info-box h3:not(:first-child) {
+            margin-top: 27px;
+        }
+
+        .info-text {
+            color: var(--muted);
+        }
+
+        .info-list {
+            padding-left: 22px;
+        }
+
+        .info-list li {
+            margin: 8px 0;
+            color: var(--muted);
+        }
+
+        .info-list strong {
+            color: var(--text);
+        }
+
+        .password {
+            display: inline-block;
+
+            margin-top: 8px;
+            padding: 7px 10px;
+
+            background: var(--surface-2);
+
+            border: 1px solid var(--border);
+            border-radius: 7px;
+
+            font-family: monospace;
+            font-size: 13px;
+        }
+
+
+        /* =========================
+           STATS
+           ========================= */
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+
+            margin: 5px 0 60px;
+        }
+
+        .stat {
+            background: var(--surface);
+
+            border: 1px solid var(--border);
+            border-radius: 12px;
+
+            padding: 20px;
+
+            text-align: center;
+        }
+
+        .stat strong {
+            display: block;
+            font-size: 27px;
+        }
+
+        .stat span {
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+
+        /* =========================
+           BUILD GRID
+           ========================= */
 
         .mods {
             display: grid;
@@ -239,12 +372,15 @@
 
         .card {
             background: var(--surface);
+
             border: 1px solid var(--border);
             border-radius: 14px;
 
             padding: 24px;
 
-            transition: 0.2s;
+            transition:
+                transform 0.2s,
+                border-color 0.2s;
         }
 
         .card:hover {
@@ -255,6 +391,8 @@
         .card-header {
             display: flex;
             justify-content: space-between;
+            align-items: flex-start;
+
             gap: 15px;
 
             margin-bottom: 14px;
@@ -262,12 +400,13 @@
 
         .card h3 {
             font-size: 20px;
+            line-height: 1.3;
         }
 
         .tag {
-            flex-shrink: 0;
-
             height: fit-content;
+
+            flex-shrink: 0;
 
             padding: 3px 8px;
 
@@ -278,23 +417,19 @@
         }
 
         .tag.public {
-            color: var(--accent);
+            color: var(--green);
             background: rgba(126, 231, 135, 0.1);
         }
 
         .tag.soon {
-            color: var(--warning);
+            color: var(--gold);
             background: rgba(242, 204, 96, 0.1);
-        }
-
-        .tag.archive {
-            color: var(--muted);
-            background: rgba(157, 168, 181, 0.1);
         }
 
         .description {
             color: var(--muted);
             font-size: 14px;
+
             margin-bottom: 18px;
         }
 
@@ -313,6 +448,8 @@
         .metadata div {
             display: flex;
             justify-content: space-between;
+            align-items: flex-start;
+
             gap: 15px;
         }
 
@@ -331,14 +468,13 @@
             margin-top: 18px;
         }
 
-        .card-buttons .button {
-            flex: 1;
-        }
 
-        /* NOTICE */
+        /* =========================
+           NOTICE
+           ========================= */
 
         .notice {
-            margin-top: 45px;
+            margin-top: 25px;
 
             padding: 20px;
 
@@ -349,7 +485,7 @@
         }
 
         .notice strong {
-            color: var(--warning);
+            color: var(--gold);
         }
 
         .notice p {
@@ -358,37 +494,71 @@
             margin-top: 6px;
         }
 
-        /* FOOTER */
+
+        /* =========================
+           FOOTER
+           ========================= */
 
         footer {
-            margin-top: 70px;
+            margin-top: 65px;
             padding: 35px 0;
 
             border-top: 1px solid var(--border);
 
             color: var(--muted);
+
             font-size: 13px;
             text-align: center;
         }
 
         footer a {
-            color: var(--accent);
+            color: var(--blue);
         }
 
-        /* MOBILE */
+
+        /* =========================
+           MOBILE
+           ========================= */
+
+        @media (max-width: 800px) {
+
+            .nav-inner {
+                padding: 10px 0;
+
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-links {
+                width: 100%;
+
+                overflow-x: auto;
+
+                padding-bottom: 3px;
+            }
+        }
 
         @media (max-width: 700px) {
 
-            .nav-links {
-                display: none;
+            .hero {
+                padding: 65px 0 50px;
             }
 
-            .hero {
-                padding: 70px 0 55px;
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-text {
+                text-align: center;
             }
 
             .hero p {
                 font-size: 16px;
+            }
+
+            .hero-buttons {
+                justify-content: center;
             }
 
             .stats {
@@ -397,10 +567,6 @@
 
             .mods {
                 grid-template-columns: 1fr;
-            }
-
-            .card-header {
-                align-items: flex-start;
             }
 
             .metadata div {
@@ -415,404 +581,998 @@
     </style>
 </head>
 
+
 <body>
 
-<nav>
-    <div class="container nav-inner">
 
-        <div class="brand">
-            Dino<span>World</span> Online
-        </div>
+    <!-- =========================
+         TOP BAR
+         ========================= -->
 
-        <div class="nav-links">
-            <a href="#mods">Builds</a>
-            <a href="#upcoming">Upcoming</a>
-            <a href="#info">Info</a>
-            <a href="https://github.com/red-forest-foxiedwo/DinoWorldOnline-CustomBuilds">
-                GitHub
-            </a>
-        </div>
+    <nav>
 
-    </div>
-</nav>
+        <div class="container nav-inner">
 
+            <div class="brand">
 
-<header class="hero">
+                <span class="brand-foxie">
+                    Foxie
+                </span>
 
-    <div class="container">
+                <span class="brand-separator">
+                    ·
+                </span>
 
-        <div class="badge">
-            FOXIE • DINO WORLD ONLINE • CUSTOM BUILDS
-        </div>
+                Dino World Online
 
-        <h1>
-            Dino World Online<br>
-            <span>Custom Builds</span>
-        </h1>
+                <span class="brand-separator">
+                    ·
+                </span>
 
-        <p>
-            A central archive for custom builds, patches and experimental
-            modifications for Dino World Online — Hunters 3D.
-        </p>
+                CustomBuilds
 
-        <div class="hero-buttons">
+            </div>
 
-            <a class="button primary" href="#mods">
-                View Builds
-            </a>
 
-            <a class="button"
-               href="https://github.com/red-forest-foxiedwo/DinoWorldOnline-CustomBuilds">
-                View Repository
-            </a>
+            <div class="nav-links">
 
-        </div>
-
-    </div>
-
-</header>
-
-
-<main class="container">
-
-
-    <!-- STATS -->
-
-    <div class="stats">
-
-        <div class="stat">
-            <strong>2</strong>
-            <span>Published Builds</span>
-        </div>
-
-        <div class="stat">
-            <strong>1</strong>
-            <span>Upcoming Build</span>
-        </div>
-
-        <div class="stat">
-            <strong>2026</strong>
-            <span>Current Chronicle</span>
-        </div>
-
-    </div>
-
-
-    <!-- PUBLISHED -->
-
-    <section id="mods">
-
-        <div class="section-title">
-            <h2>Published Builds</h2>
-            <p>Currently available builds from the archive.</p>
-        </div>
-
-
-        <div class="mods">
-
-
-            <!-- BUILD 1 -->
-
-            <article class="card">
-
-                <div class="card-header">
-
-                    <h3>No Level Capping</h3>
-
-                    <span class="tag public">
-                        PUBLIC
-                    </span>
-
-                </div>
-
-                <p class="description">
-                    A build intended to prevent level-0 issues caused by
-                    incompatible or abusive modifications.
-                </p>
-
-                <div class="metadata">
-
-                    <div>
-                        <span>Build</span>
-                        <span>1</span>
-                    </div>
-
-                    <div>
-                        <span>Patch ID</span>
-                        <span>rfmnolvlcap</span>
-                    </div>
-
-                    <div>
-                        <span>License</span>
-                        <span>MIT</span>
-                    </div>
-
-                    <div>
-                        <span>Password</span>
-                        <span>None</span>
-                    </div>
-
-                </div>
-
-                <div class="card-buttons">
-
-                    <a class="button primary"
-                       href="https://drive.google.com/file/d/1Scr69zRQjmoEYlXPbK6hAUOwi-05g4D8/view?usp=drivesdk"
-                       target="_blank"
-                       rel="noopener">
-                        Download
-                    </a>
-
-                    <a class="button"
-                       href="Logs.md">
-                        Details
-                    </a>
-
-                </div>
-
-            </article>
-
-
-            <!-- BUILD 2 -->
-
-            <article class="card">
-
-                <div class="card-header">
-
-                    <h3>No Level Capping — Enhanced</h3>
-
-                    <span class="tag public">
-                        PUBLIC
-                    </span>
-
-                </div>
-
-                <p class="description">
-                    The enhanced successor to Build 1, designed as the
-                    more complete solution to the level-0 issue.
-                </p>
-
-                <div class="metadata">
-
-                    <div>
-                        <span>Build</span>
-                        <span>2</span>
-                    </div>
-
-                    <div>
-                        <span>Patch ID</span>
-                        <span>rfmnolvl0</span>
-                    </div>
-
-                    <div>
-                        <span>License</span>
-                        <span>MIT</span>
-                    </div>
-
-                    <div>
-                        <span>Password</span>
-                        <span>None</span>
-                    </div>
-
-                </div>
-
-                <div class="card-buttons">
-
-                    <a class="button"
-                       href="Logs.md">
-                        Details
-                    </a>
-
-                    <span class="button"
-                          style="opacity:.45; cursor:not-allowed;">
-                        Download pending
-                    </span>
-
-                </div>
-
-            </article>
-
-
-        </div>
-
-    </section>
-
-
-    <!-- UPCOMING -->
-
-    <section id="upcoming">
-
-        <div class="section-title">
-
-            <h2>Coming Soon</h2>
-
-            <p>
-                Builds currently listed in the development chronicle.
-            </p>
-
-        </div>
-
-
-        <div class="mods">
-
-
-            <article class="card">
-
-                <div class="card-header">
-
-                    <h3>XP Depleter</h3>
-
-                    <span class="tag soon">
-                        UPCOMING
-                    </span>
-
-                </div>
-
-                <p class="description">
-                    Planned utility build targeting XP-related
-                    modification interactions.
-                </p>
-
-                <div class="metadata">
-
-                    <div>
-                        <span>Estimated date</span>
-                        <span>20 September</span>
-                    </div>
-
-                    <div>
-                        <span>Build</span>
-                        <span>1</span>
-                    </div>
-
-                    <div>
-                        <span>Patch ID</span>
-                        <span>rfm.fgdwo.hoxp.-2m</span>
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <article class="card">
-
-                <div class="card-header">
-
-                    <h3>XP Bomb</h3>
-
-                    <span class="tag soon">
-                        SPECULATED
-                    </span>
-
-                </div>
-
-                <p class="description">
-                    Experimental XP-related build listed in the
-                    development chronicle.
-                </p>
-
-                <div class="metadata">
-
-                    <div>
-                        <span>Estimated date</span>
-                        <span>24 September</span>
-                    </div>
-
-                    <div>
-                        <span>Build</span>
-                        <span>3</span>
-                    </div>
-
-                    <div>
-                        <span>Patch ID</span>
-                        <span>rfm.fgdwo.hoxp.2b</span>
-                    </div>
-
-                </div>
-
-            </article>
-
-
-        </div>
-
-    </section>
-
-
-    <!-- INFORMATION -->
-
-    <section id="info">
-
-        <div class="section-title">
-
-            <h2>Installation & Information</h2>
-
-            <p>
-                Read the complete archive documentation before installing
-                any build.
-            </p>
-
-        </div>
-
-
-        <div class="notice">
-
-            <strong>⚠ Read before installing</strong>
-
-            <p>
-                Installation requirements, build information, passwords,
-                licensing information and the complete development
-                chronicle are maintained in the repository documentation.
-            </p>
-
-            <div class="card-buttons">
-
-                <a class="button"
-                   href="Logs.md">
-                    Open Build Logs
+                <a href="#information">
+                    Information
                 </a>
 
-                <a class="button"
-                   href="DISCLAIMER">
-                    Read Disclaimer
+                <a href="#builds">
+                    Builds
                 </a>
 
-                <a class="button"
-                   href="README.md">
-                    Repository README
+                <a href="#upcoming">
+                    Upcoming
+                </a>
+
+                <a href="#repository">
+                    GitHub
                 </a>
 
             </div>
 
         </div>
 
-    </section>
+    </nav>
 
 
-</main>
+
+    <!-- =========================
+         HERO
+         ========================= -->
+
+    <header class="hero">
+
+        <div class="container hero-content">
 
 
-<footer>
+            <!-- Replace with the actual game icon PNG path -->
 
-    <div class="container">
+            <img
+                class="game-icon"
+                src="GAME_ICON_URL_HERE"
+                alt="Dino World Online icon"
+            >
+
+
+            <div class="hero-text">
+
+                <h1>
+                    Dino World Online<br>
+                    <span>Custom Builds</span>
+                </h1>
+
+
+                <p>
+                    A central archive for custom builds, patches and
+                    experimental modifications for Dino World Online —
+                    Hunters 3D.
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a
+                        class="button green"
+                        href="#builds"
+                    >
+                        View Builds
+                    </a>
+
+
+                    <a
+                        class="button blue"
+                        href="#repository"
+                    >
+                        View Repository
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <main class="container">
+
+
+        <!-- =========================
+             GENERAL INFORMATION
+             ========================= -->
+
+        <section id="information">
+
+            <div class="section-title">
+
+                <h2>
+                    General Information
+                </h2>
+
+                <p>
+                    Important information and installation instructions.
+                </p>
+
+            </div>
+
+
+            <div class="info-box">
+
+
+                <h3>
+                    Prerequisites
+                </h3>
+
+
+                <ul class="info-list">
+
+                    <li>
+                        <strong>Required:</strong>
+                        A Google account.
+                    </li>
+
+                </ul>
+
+
+
+                <h3>
+                    Utility Mods
+                </h3>
+
+
+                <p class="info-text">
+
+                    A
+                    <strong style="color: var(--text);">
+                        Utility
+                    </strong>
+                    mod is a mod intended to be included in the base
+                    of larger mods.
+
+                </p>
+
+
+
+                <h3>
+                    Installing Procedure
+                </h3>
+
+
+                <ol class="info-list">
+
+                    <li>
+                        Find the correct mod link below.
+                    </li>
+
+                    <li>
+                        Open the link using Google Drive.
+                    </li>
+
+                    <li>
+                        Read the page thoroughly.
+                    </li>
+
+                    <li>
+                        Install the <code>.apk</code> if it is a public
+                        file. If it is private, install it after
+                        obtaining the required ZIP password.
+                    </li>
+
+                    <li>
+                        If the download is an archive, extract it to
+                        obtain the <code>.apk</code>.
+                    </li>
+
+                    <li>
+                        Install the <code>.apk</code> on a personal
+                        Android device if it is signed, or use a VM
+                        if it is unsigned.
+                    </li>
+
+                </ol>
+
+
+
+                <h3>
+                    Password Format
+                </h3>
+
+
+                <p class="info-text">
+                    Passwords use the format:
+                </p>
+
+
+                <div class="password">
+                    Date_of_Publish + Secret_Code
+                </div>
+
+
+                <p
+                    class="info-text"
+                    style="margin-top: 10px;"
+                >
+                    Example: if the date of publishing is 1 January 2027
+                    and the Secret Code is
+                    <code>ABCDEFGHIJ</code>, the resulting password would be:
+                </p>
+
+
+                <div class="password">
+                    01012027ABCDEFGHIJ
+                </div>
+
+
+                <p
+                    class="info-text"
+                    style="margin-top: 10px;"
+                >
+                    Ask for the Secret Code when required.
+                </p>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             STATS
+             ========================= -->
+
+        <div class="stats">
+
+
+            <div class="stat">
+
+                <strong>
+                    1
+                </strong>
+
+                <span>
+                    Published Build
+                </span>
+
+            </div>
+
+
+            <div class="stat">
+
+                <strong>
+                    1
+                </strong>
+
+                <span>
+                    Upcoming Build
+                </span>
+
+            </div>
+
+
+            <div class="stat">
+
+                <strong>
+                    2026
+                </strong>
+
+                <span>
+                    Current Chronicle
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =========================
+             PUBLISHED BUILDS
+             ========================= -->
+
+        <section id="builds">
+
+
+            <div class="section-title">
+
+                <h2>
+                    Published Builds
+                </h2>
+
+                <p>
+                    Currently available custom builds.
+                </p>
+
+            </div>
+
+
+
+            <div class="mods">
+
+
+                <!-- BUILD 1 -->
+
+                <article class="card">
+
+
+                    <div class="card-header">
+
+                        <h3>
+                            No Level Capping
+                        </h3>
+
+                        <span class="tag public">
+                            PUBLIC
+                        </span>
+
+                    </div>
+
+
+
+                    <p class="description">
+
+                        A level-protection build designed to prevent
+                        level-0 abuse. This is the recommended build
+                        and is henceforth inherent in other mods unless
+                        explicitly stated otherwise.
+
+                    </p>
+
+
+
+                    <div class="metadata">
+
+
+                        <div>
+                            <span>
+                                Type
+                            </span>
+
+                            <span>
+                                Utility
+                            </span>
+                        </div>
+
+
+                        <div>
+                            <span>
+                                Availability
+                            </span>
+
+                            <span>
+                                100% Public
+                            </span>
+                        </div>
+
+
+                        <div>
+                            <span>
+                                Purpose
+                            </span>
+
+                            <span>
+                                Anti-Abuse
+                            </span>
+                        </div>
+
+
+                        <div>
+                            <span>
+                                Patch
+                            </span>
+
+                            <span>
+                                No level 0 issues — 100% foolproof
+                            </span>
+                        </div>
+
+
+                        <div>
+                            <span>
+                                Build-Code
+                            </span>
+
+                            <span>
+                                1
+                            </span>
+                        </div>
+
+
+                        <div>
+                            <span>
+                                Patch-ID
+                            </span>
+
+                            <span>
+                                rfmnolvl0
+                            </span>
+                        </div>
+
+
+                        <div>
+                            <span>
+                                Password
+                            </span>
+
+                            <span>
+                                None
+                            </span>
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="card-buttons">
+
+
+                        <a
+                            class="button green"
+                            href="ooo.html"
+                        >
+                            Download
+                        </a>
+
+
+                    </div>
+
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             UPCOMING BUILDS
+             ========================= -->
+
+        <section id="upcoming">
+
+
+            <div class="section-title">
+
+                <h2>
+                    Coming Soon
+                </h2>
+
+                <p>
+                    Builds currently listed in the development chronicle.
+                </p>
+
+            </div>
+
+
+
+            <div class="mods">
+
+
+                <!-- XP DEPLETER -->
+
+                <article class="card">
+
+
+                    <div class="card-header">
+
+                        <h3>
+                            XP Depleter
+                        </h3>
+
+                        <span class="tag soon">
+                            UPCOMING
+                        </span>
+
+                    </div>
+
+
+
+                    <p class="description">
+
+                        A planned utility / anti-mod build intended
+                        to hand out negative 2 million XP when hunted.
+
+                    </p>
+
+
+
+                    <div class="metadata">
+
+
+                        <div>
+                            <span>
+                                Estimated Date
+                            </span>
+
+                            <span>
+                                20 September
+                            </span>
+                        </div>
+
+
+                        <div>
+                            <span>
+                                Type
+                            </span>
+
+                            <span>
+                                Utility
+                            </span>
+                        </div>
+
+
+                        <div>
+                            <span>
+                                Availability
+                            </span>
+
+                            <span>
+                                Public
+                            </span>
+                        </div>
+
+
+                        <div>
+                            <span>
+                                Purpose
+                            </span>
+
+                            <span>
+                                Utility / Anti-Mod
+                            </span>
+                        </div>
+
+
+                        <div>
+                            <span>
+                                Build-Code
+                            </span>
+
+                            <span>
+                                1
+                            </span>
+                        </div>
+
+
+                        <div>
+                            <span>
+                                Patch-ID
+                            </span>
+
+                            <span>
+                                rfm.fgdwo.hoxp.-2m
+                            </span>
+                        </div>
+
+
+                    </div>
+
+
+                </article>
+
+
+
+                <!-- XP ARCHITECT -->
+
+                <article class="card">
+
+
+                    <div class="card-header">
+
+                        <h3>
+                            XP Architect
+                        </h3>
+
+                        <span class="tag soon">
+                            SPECULATED
+                        </span>
+
+                    </div>
+
+
+
+                    <p class="description">
+
+                        A planned XP utility counterpart listed
+                        in the development chronicle.
+
+                    </p>
+
+
+
+                    <div class="metadata">
+
+
+                        <div>
+                            <span>
+                                Estimated Date
+                            </span>
+
+                            <span>
+                                22 September
+                            </span>
+                        </div>
+
+
+                        <div>
+                            <span>
+                                Type
+                            </span>
+
+                            <span>
+                                Utility
+                            </span>
+                        </div>
+
+
+                        <div>
+                            <span>
+                                Patch
+                            </span>
+
+                            <span>
+                                +2 million XP
+                            </span>
+                        </div>
+
+
+                        <div>
+                            <span>
+                                Build-Code
+                            </span>
+
+                            <span>
+                                2
+                            </span>
+                        </div>
+
+
+                        <div>
+                            <span>
+                                Patch-ID
+                            </span>
+
+                            <span>
+                                rfm.fgdwo.hoxp.2m
+                            </span>
+                        </div>
+
+
+                    </div>
+
+
+                </article>
+
+
+
+                <!-- XP BOMB -->
+
+                <article class="card">
+
+
+                    <div class="card-header">
+
+                        <h3>
+                            XP Bomb
+                        </h3>
+
+                        <span class="tag soon">
+                            SPECULATED
+                        </span>
+
+                    </div>
+
+
+
+                    <p class="description">
+
+                        A planned high-value XP build listed
+                        in the development chronicle.
+
+                    </p>
+
+
+
+                    <div class="metadata">
+
+
+                        <div>
+                            <span>
+                                Estimated Date
+                            </span>
+
+                            <span>
+                                24 September
+                            </span>
+                        </div>
+
+
+                        <div>
+                            <span>
+                                Type
+                            </span>
+
+                            <span>
+                                Utility
+                            </span>
+                        </div>
+
+
+                        <div>
+                            <span>
+                                Patch
+                            </span>
+
+                            <span>
+                                +2 billion XP
+                            </span>
+                        </div>
+
+
+                        <div>
+                            <span>
+                                Build-Code
+                            </span>
+
+                            <span>
+                                3
+                            </span>
+                        </div>
+
+
+                        <div>
+                            <span>
+                                Patch-ID
+                            </span>
+
+                            <span>
+                                rfm.fgdwo.hoxp.2b
+                            </span>
+                        </div>
+
+
+                    </div>
+
+
+                </article>
+
+
+
+                <!-- XP ANNIHILATOR -->
+
+                <article class="card">
+
+
+                    <div class="card-header">
+
+                        <h3>
+                            XP Annihilator
+                        </h3>
+
+                        <span class="tag soon">
+                            SPECULATED
+                        </span>
+
+                    </div>
+
+
+
+                    <p class="description">
+
+                        A planned anti-abuse counterpart to XP Bomb.
+
+                    </p>
+
+
+
+                    <div class="metadata">
+
+
+                        <div>
+                            <span>
+                                Estimated Date
+                            </span>
+
+                            <span>
+                                25 September
+                            </span>
+                        </div>
+
+
+                        <div>
+                            <span>
+                                Type
+                            </span>
+
+                            <span>
+                                Utility
+                            </span>
+                        </div>
+
+
+                        <div>
+                            <span>
+                                Patch
+                            </span>
+
+                            <span>
+                                -2 billion XP
+                            </span>
+                        </div>
+
+
+                        <div>
+                            <span>
+                                Purpose
+                            </span>
+
+                            <span>
+                                Anti-Abuse / Anti-Mod
+                            </span>
+                        </div>
+
+
+                        <div>
+                            <span>
+                                Build-Code
+                            </span>
+
+                            <span>
+                                4
+                            </span>
+                        </div>
+
+
+                        <div>
+                            <span>
+                                Patch-ID
+                            </span>
+
+                            <span>
+                                rfm.fgdwo.hoxp.-2b
+                            </span>
+                        </div>
+
+
+                    </div>
+
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             REPOSITORY / LICENSING
+             ========================= -->
+
+        <section id="repository">
+
+
+            <div class="notice">
+
+
+                <strong>
+                    Repository & Licensing
+                </strong>
+
+
+                <p>
+                    The repository contains the build archive,
+                    documentation, licensing information and
+                    development logs.
+                </p>
+
+
+                <div class="hero-buttons">
+
+
+                    <a
+                        class="button blue"
+                        href="https://github.com/red-forest-foxiedwo/DinoWorldOnline-CustomBuilds"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        View GitHub Repository
+                    </a>
+
+
+                    <a
+                        class="button"
+                        href="Logs.md"
+                    >
+                        Full Logs
+                    </a>
+
+
+                    <a
+                        class="button"
+                        href="DISCLAIMER"
+                    >
+                        Disclaimer
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+         ========================= -->
+
+    <footer>
+
 
         <p>
             Dino World Online — Hunters 3D
         </p>
 
+
         <p>
             Custom Builds Archive • 2026
         </p>
 
-        <p style="margin-top:10px;">
-            <a href="https://github.com/red-forest-foxiedwo/DinoWorldOnline-CustomBuilds">
-                GitHub Repository
+
+        <p style="margin-top: 8px;">
+
+
+            <a
+                href="https://github.com/red-forest-foxiedwo/DinoWorldOnline-CustomBuilds"
+                target="_blank"
+                rel="noopener"
+            >
+                red-forest-foxiedwo/DinoWorldOnline-CustomBuilds
             </a>
+
+
         </p>
 
-    </div>
 
-</footer>
+    </footer>
 
 
 </body>
