@@ -7,7 +7,7 @@
         <li>Find correct mod link below
         <li>Open link using Google Drive</li>
         <li>Read page thoroughly</li>
-        <li>Install .apk if it is a public file. If private install after you write the .zip password</li>li>
+        <li>Install .apk if it is a public file. If private install after you write the .zip password</li>
         <li>.apk inside the extracted folder</li>
         <li>Install .apk on personal Android (if signed), or in VM (if unsigned)</li>
       </ol>
