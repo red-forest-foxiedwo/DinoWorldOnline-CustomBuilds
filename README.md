@@ -1,4 +1,4 @@
-# <a href="https://red-forest-foxiedwo.github.io/DinoWorldOnline-CustomBuilds ">Dino World Online - Hunters 3d: Mod APKs</a>
+# <a href="https://red-forest-foxiedwo.github.io/DinoWorldOnline-CustomBuilds ">Dino World Online - Hunters 3d: Mod APKs</a> (Click)
 Repo for posting mod APKs related to the Foxie game Dino World Online - Hunters 3d, for Android Users for gaming and testing.
 
 # Contents
